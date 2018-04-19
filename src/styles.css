@@ -24,3 +24,9 @@ body{
 @-webkit-keyframes spin {
   to { -webkit-transform: rotate(360deg); }
 }
+
+@media only screen and (min-width: 432px) {
+  .mat-card-actions{
+    max-width: 412px;
+  }
+}
