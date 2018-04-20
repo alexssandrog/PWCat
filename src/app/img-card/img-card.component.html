@@ -1,12 +1,12 @@
 <mat-card>
   <mat-card-actions>
     <button 
-      color="{{ button.color }}" 
+      color = "{{ buttonObj.color }}"
       (click)="generateSrc()"
-      disabled="{{ button.disabled }}"
+      [disabled]="buttonObj.disabled"
       mat-button 
       mat-raised-button>
-      {{ button.text }}
+      {{ buttonObj.text }}
     </button>
   </mat-card-actions>
   <img 

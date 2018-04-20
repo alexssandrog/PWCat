@@ -24,7 +24,7 @@ export class ImgCardComponent implements OnInit {
     api: 'https://cataas.com/cat/says/',
     fontsize: 40
   };
-  public button: Button = {
+  public buttonObj: Button = {
     text: 'Give me another cat',
     color: 'primary',
     disabled: false
@@ -36,8 +36,8 @@ export class ImgCardComponent implements OnInit {
     this.generateSrc();
 
     if (!navigator.onLine) {
-      this.button.text = 'Sorry, you\'re offline';
-      this.button.disabled = true;
+      this.buttonObj.text = 'Sorry, you\'re offline';
+      this.buttonObj.disabled = true;
     }
   }
 
